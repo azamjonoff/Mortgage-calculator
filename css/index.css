@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #e4f4fd;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+.wrap-cal {
+  padding: 40px;
+}
+
+.wrap-result {
+  padding: 40px;
+  background-color: #133041;
+  border-radius: 0 24px 24px 80px;
+}
+
+.cal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+.cal-title {
+  color: #133041;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.cal-clear-btn {
+  padding: 0;
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4e6e7e;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.cal-amount {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4e6e7e;
+  margin-bottom: 12px;
+}
+
+.wrap-also {
+  margin-bottom: 24px;
+}
+
+.wrap-also1 {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.wrap-amount {
+  border: 1px solid #6b94a8;
+  height: auto;
+  width: auto;
+  display: flex;
+  border-radius: 3px;
+  margin-top: 12px;
+}
+
+input[type="text"] {
+  border: none;
+  width: 100%;
+  height: 45px;
+  padding: 5px 15px;
+  &:active {
+    border: none;
+  }
+}
+
+.cal-evro {
+  background-color: #e4f4fd;
+  padding: 12.5px 16px;
+  font-weight: 700;
+  color: #4e6e7e;
+  font-size: 18px;
+  line-height: 22.5px;
+}
+
+.wrapper-radio {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wrap-radio {
+  padding: 12.5px 16px;
+  display: flex;
+  gap: 16px;
+  border: 1px solid #6b94a8;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: #d8db2f;
+  }
+}
+
+.wrap-radio-selected {
+  border-color: #d8db2f;
+  background-color: rgba(216, 219, 47, 0.15);
+}
+
+.cal-btn {
+  margin-top: 40px;
+  padding: 16px 40px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border-radius: 999px;
+  background-color: #d8db2f;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.5px;
+  text-align: center;
+  color: #133041;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:hover {
+    background-color: #d8db2f26;
+  }
+}

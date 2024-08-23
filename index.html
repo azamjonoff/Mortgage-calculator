@@ -5,8 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mortgage Calculator</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <h1>Home</h1>
+    <div class="wrap">
+      <div class="container">
+        <div class="wrap-cal">
+          <div class="cal-heading">
+            <h1 class="cal-title">Mortgage Calculator</h1>
+            <button class="cal-clear-btn">Clear All</button>
+          </div>
+          <div class="cal-form">
+            <form>
+              <div class="wrap-also">
+                <label>
+                  <span class="cal-amount">Mortgage Amount</span>
+                  <div class="wrap-amount">
+                    <span class="cal-evro">£</span>
+                    <input type="text" />
+                  </div>
+                </label>
+              </div>
+              <div class="wrap-also1">
+                <label>
+                  <span class="cal-amount">Mortgage Term</span>
+                  <div class="wrap-amount">
+                    <input type="text" />
+                    <span class="cal-evro">years</span>
+                  </div>
+                </label>
+                <label>
+                  <span class="cal-amount">Interest Rate</span>
+                  <div class="wrap-amount">
+                    <input type="text" />
+                    <span class="cal-evro">%</span>
+                  </div>
+                </label>
+              </div>
+              <div>
+                <span class="cal-amount">Mortgage Type</span>
+                <label class="wrapper-radio">
+                  <label class="wrap-radio">
+                    <input type="radio" name="radio" />
+                    <span>Repayment</span>
+                  </label>
+                  <label class="wrap-radio">
+                    <input type="radio" name="radio" />
+                    <span>Interest Only</span>
+                  </label>
+                </label>
+                <button class="cal-btn">
+                  <img src="./images/calculate-img.svg" alt="" />
+                  <span>Calculate Repayments</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="wrap-result"></div>
+      </div>
+    </div>
   </body>
 </html>
