@@ -67,6 +67,20 @@ ol {
   padding: 40px;
   background-color: #133041;
   border-radius: 0 24px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.wrap-result-then {
+  padding: 40px;
+  background-color: #133041;
+  border-radius: 0 24px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .cal-heading {
@@ -91,6 +105,7 @@ ol {
   color: #4e6e7e;
   background-color: transparent;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .cal-amount {
@@ -178,8 +193,79 @@ input[type="text"] {
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 
   &:hover {
     background-color: #d8db2f26;
   }
+}
+
+.result-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.result-title-then {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.result-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #9abed5;
+}
+
+.result-description-then {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9abed5;
+}
+
+.hidden {
+  display: none;
+}
+
+.real-result-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9abed5;
+  margin-bottom: 8px;
+}
+
+.monthly-repayment {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 70px;
+  color: #d8db2f;
+}
+
+.result-line {
+  width: 100%;
+  height: 1px;
+  background-color: #9abed540;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.total-term {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.wrap-real-result {
+  padding: 32px;
+  border-radius: 8px;
+  border-top: 4px solid #d8db2f;
+  background: #00000040;
 }
